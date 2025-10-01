@@ -41,6 +41,8 @@ Par défaut, les fichiers de TP permettent d'accéder à un objet global pré-in
 
 **Pourquoi le noyau indique `0x302010` et pas `0x300000` comme adresse de début ? Indice: essayer de comprendre linker.lds, regardez également le code de "entry.s"**
 
+Car avant l'addresse de début on ajoute de l'espace pour `mbh` et `stack`.
+
 ---
 
 ### Question 2
